@@ -13,7 +13,7 @@ make
 
 ### Usage
 
-You can run a simple demo with:
+You can run a simple demo that will solve 20 boards with:
 
 `./demo`
 
@@ -21,9 +21,9 @@ Or you can run just the solver with:
 
 `./sudoku`
 
-The solver itself expects a board as a string from the **stdin** and spits out the solution as a string to the **stdout**. 
+The solver itself expects a board as a string from the **stdin** and spits out the solution as a string to the **stdout**. The easiest way to do it is to get the board from a file like so:
 
-The easiest way to do it is to get the board from a file like so: **board.txt**
+**board.txt**
 ```
 0 0 0 0 0 5 0 7 0
 1 0 0 0 0 0 0 4 9
@@ -38,7 +38,9 @@ The easiest way to do it is to get the board from a file like so: **board.txt**
 
 Then run: `./sudoku < board.txt > sol.txt`
 
-You will get: **sol.txt**
+You will get:
+
+**sol.txt**
 ```
 8 4 9 3 1 5 6 7 2
 1 3 6 2 7 8 5 4 9
@@ -53,4 +55,4 @@ You will get: **sol.txt**
 
 ### Board
 
-The board is just a sequence of characters, where 0 denotes an empty cell and the numbers from 1-9 denote the actual numbers from 1 to 9. **Any other character is ignored.** The numbers fill the board left to right, top to bottom.
+The board is just a sequence of characters, where 0 denotes an empty cell and the numbers 1-9 denote the actual numbers from 1 to 9. **Any other character is ignored.** The numbers fill the board left to right, top to bottom.
