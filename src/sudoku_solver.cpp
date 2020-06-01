@@ -71,10 +71,8 @@ bool sudoku::pointing_pair_triple(){
 
 bool sudoku::solve(){
 	sint i = 0;
-	out();
 	while(r && i < t_n)
-		if((this->*t[i])()) i=0, cout<<(int)i<<endl;
+		if((this->*t[i])()) i=0;
 		else ++i;
-	out();
 	return !r;
 }
