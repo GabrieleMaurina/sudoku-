@@ -1,7 +1,7 @@
 # Sudoku Solver
 A c++ sudoku solver.
 
-### Build
+## Build
 
 Clone this repo and build the binaries with:
 
@@ -11,7 +11,7 @@ cd sudoku
 make
 ```
 
-### Usage
+## Usage
 
 You can run a simple demo that will solve 20 boards with:
 
@@ -53,6 +53,6 @@ You will get:
 6 1 5 7 4 3 9 2 8
 ```
 
-### Board
+## Board
 
-The board is just a sequence of characters, where 0 denotes an empty cell and the numbers 1-9 denote the actual numbers from 1 to 9. **Any other character is ignored.** The numbers fill the board left to right, top to bottom.
+The board is just a sequence of characters, where 0 denotes an empty cell and the numbers 1-9 denote the actual numbers from 1 to 9. **Any other character is ignored.** The numbers fill the board left to right, top to bottom. 20 premade boards are available in the "example" folder.
